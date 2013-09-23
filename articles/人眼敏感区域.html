@@ -1,0 +1,298 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 9 6 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+h2
+	{mso-style-link:"标题 2 Char";
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:173%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light","sans-serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.0pt;
+	font-family:"Calibri Light","sans-serif";}
+span.MsoPlaceholderText
+	{color:gray;}
+span.2Char
+	{mso-style-name:"标题 2 Char";
+	mso-style-link:"标题 2";
+	font-family:"Calibri Light","sans-serif";
+	font-weight:bold;}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=ZH-CN style='text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal><span style='font-family:宋体'>最基础也是最权威的一篇：</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:#222222;background:white'>Itti L, Koch C, Niebur E. </span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Arial","sans-serif";color:red;
+background:white'>A model of saliency-based visual attention for rapid scene
+analysis</span><span lang=EN-US style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:#222222;background:white'>[J]. Pattern Analysis and Machine Intelligence,
+IEEE Transactions on, 1998, 20(11): 1254-1259.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:#222222;background:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:宋体;color:#222222;
+background:white'>上一篇的</span><span lang=EN-US style='font-size:10.0pt;
+font-family:"Arial","sans-serif";color:#222222;background:white'>review</span><span
+style='font-size:10.0pt;font-family:宋体;color:#222222;background:white'>，写的更全面易懂一些，但是没写具体实现算法。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:#222222;background:white'>Itti L, Koch C. </span><span lang=EN-US
+style='font-size:10.0pt;font-family:"Arial","sans-serif";color:red;background:
+white'>Computational modelling of visual attention</span><span lang=EN-US
+style='font-size:10.0pt;font-family:"Arial","sans-serif";color:#222222;
+background:white'>[J]. Nature reviews neuroscience, 2001, 2(3): 194-203.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体'>在上面文章方法的基础上加入了神经网络</span><span
+lang=EN-US>/</span><span style='font-family:宋体'>遗传算法的概念。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:#222222;background:white'>Walther D, Koch C. </span><span lang=EN-US
+style='font-size:10.0pt;font-family:"Arial","sans-serif";color:red;background:
+white'>Modeling attention to salient proto-objects</span><span lang=EN-US
+style='font-size:10.0pt;font-family:"Arial","sans-serif";color:#222222;
+background:white'>[J]. Neural Networks, 2006, 19(9): 1395-1407.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:#222222;background:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:宋体;color:#222222;
+background:white'>这个跟之前的有很大区别，从名字看出来它基于信息最大化准则来找显著性。不过最后他的结论侧面说明了上面这些文章的模型是有道理的。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:#222222;background:white'>Bruce N, Tsotsos J. </span><a name="OLE_LINK7"></a><a
+name="OLE_LINK6"><span lang=EN-US style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:red;background:white'>Saliency based on information maximization</span></a><span
+lang=EN-US style='font-size:10.0pt;font-family:"Arial","sans-serif";color:#222222;
+background:white'>[C]//Advances in neural information processing systems. 2005:
+155-162.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:#222222;background:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:宋体;color:#222222;
+background:white'>又是</span><span lang=EN-US style='font-size:10.0pt;font-family:
+"Arial","sans-serif";color:#222222;background:white'>Koch</span><span
+style='font-size:10.0pt;font-family:宋体;color:#222222;background:white'>带出来的文章，提出了一个新的基于图的模型，这个模型对经典模型提取特征的步骤进行了极大的简化，并宣称拥有更好的效果。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:#222222;background:white'>Harel J, Koch C, Perona P. </span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Arial","sans-serif";color:red;
+background:white'>Graph-based visual saliency</span><span lang=EN-US
+style='font-size:10.0pt;font-family:"Arial","sans-serif";color:#222222;
+background:white'>[C]//Advances in neural information processing systems. 2006:
+545-552.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='page-break-after:avoid'><span lang=EN-US><img
+width=553 height=467 id="图片 1" src="人眼敏感区域.files/image001.jpg"></span></p>
+
+<p class=MsoCaption style='margin-left:105.0pt;text-indent:21.0pt'><span
+lang=EN-US>Figure </span><span lang=EN-US>1</span><span lang=EN-US> General
+architecture of the model.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体'>这篇文章引用数接近</span><span
+lang=EN-US>5000</span><span style='font-family:宋体'>，可以说是最权威的模型。</span></p>
+
+<h2><span lang=EN-US>1.</span><span style='font-family:宋体'>首先最复杂的一步是提取特征图：</span></h2>
+
+<p class=MsoNormal><span lang=EN-US>It is related to the so-called “feature
+integration theory,” explaining human visual search strategies.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Each feature is computed by a set of linear
+“center-surround” operations akin to visual receptive fields.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>An intensity image <i>I</i> is obtained as <i>I</i>
+= (r + g + b)/ 3. <i>I</i> is used to create a Gaussian pyramid <i>I</i>(</span><a
+name="OLE_LINK1"></a><span
+lang=EN-US style='font-size:10.5pt;font-family:"Calibri","sans-serif";
+position:relative;top:4.0pt'><img width=8 height=21
+src="人眼敏感区域.files/image002.png"></span><span lang=EN-US>), where </span><span
+lang=EN-US style='font-size:10.5pt;font-family:"Calibri","sans-serif";
+position:relative;top:4.0pt'><img width=20 height=21
+src="人眼敏感区域.files/image003.png"></span><span lang=EN-US>[0..8] is the scale. </span></p>
+
+<p class=MsoNormal><span lang=EN-US>Four broadly-tuned color channels are
+created: R = r - (g + b)/ 2 for red, G = g - (r + b)/ 2 for green, B = b - (r +
+g)/ 2 for blue, and Y = (r + g)/ 2 - | r - g| / 2 - b for yellow (negative values
+are set to zero). Four Gaussian pyramids R(s), G(s), B(s), and Y(s) are created
+from these color channels.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Center-surround differences (‘</span><span
+lang=EN-US style='font-size:10.5pt;font-family:"Calibri","sans-serif";
+position:relative;top:4.0pt'><img width=14 height=21
+src="人眼敏感区域.files/image004.png"></span><span lang=EN-US>’ defined previously)
+between a</span><span style='font-family:宋体'>“</span><span lang=EN-US>center”
+fine scale <i>c</i> and a “surround” coarser scale <i>s</i> yield the feature
+maps.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I(c,
+s) = | I(c) </span><span
+lang=EN-US style='font-size:10.5pt;font-family:"Calibri","sans-serif";
+position:relative;top:4.0pt'><img width=14 height=21
+src="人眼敏感区域.files/image004.png"></span><span lang=EN-US>&nbsp;I(s)| where c </span><span
+lang=EN-US style='font-size:10.5pt;font-family:"Calibri","sans-serif";
+position:relative;top:4.0pt'><img width=9 height=21
+src="人眼敏感区域.files/image005.png"></span><span lang=EN-US>&nbsp;{2, 3, 4} and s =
+c + d, d </span><span
+lang=EN-US style='font-size:10.5pt;font-family:"Calibri","sans-serif";
+position:relative;top:4.0pt'><img width=9 height=21
+src="人眼敏感区域.files/image005.png"></span><span lang=EN-US>&nbsp;{3, 4}.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>A second set of maps is similarly
+constructed for the color channels, which, in cortex, are represented using a
+so-called “color double-opponent” system.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RG(c,
+s) = | (R(c) - G(c))</span><a name="OLE_LINK5"></a><a name="OLE_LINK4"></a><a
+name="OLE_LINK3"></a><span
+lang=EN-US style='font-size:10.5pt;font-family:"Calibri","sans-serif";
+position:relative;top:4.0pt'><img width=14 height=21
+src="人眼敏感区域.files/image004.png"></span><span lang=EN-US>(G(s) - R(s))|</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BY(c,
+s) = | (B(c) - Y(c))</span><span
+lang=EN-US style='font-size:10.5pt;font-family:"Calibri","sans-serif";
+position:relative;top:4.0pt'><img width=14 height=21
+src="人眼敏感区域.files/image004.png"></span><span lang=EN-US>(Y(s) - B(s))|</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体'>另外还有一组方向上的</span><span
+lang=EN-US>features maps</span><span style='font-family:宋体'>，利用</span><span
+lang=EN-US>Gabor pyramids</span><span style='font-family:宋体'>并选取</span><span
+lang=EN-US>4</span><span style='font-family:宋体'>个角度来做。</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2><span lang=EN-US>2.</span><span style='font-family:宋体'>接着就是对这些特征图进行标准化，以及最后的合成</span></h2>
+
+<p class=MsoNormal><span style='font-family:宋体'>标准化是一个三步走的策略</span></p>
+
+<p class=MsoNormal><span lang=EN-US>1) normalizing the values in the map to a
+fixed range [0..M], in order to eliminate modality-dependent amplitude
+differences;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>2) finding the location of the map’s global
+maximum M and computing the average m of all its other local maxima; and</span></p>
+
+<p class=MsoNormal><span lang=EN-US>3)globally multiplying the map by </span><span
+lang=EN-US style='font-size:10.5pt;font-family:"Calibri","sans-serif";
+position:relative;top:4.0pt'><img width=58 height=21
+src="人眼敏感区域.files/image006.png"></span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体'>标准化例子：</span></p>
+
+<p class=MsoNormal><span lang=EN-US><img width=554 height=277 id="图片 2"
+src="人眼敏感区域.files/image007.jpg"></span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体'>合成分两步</span><span lang=EN-US>, </span><span
+style='font-family:宋体'>先三类</span><span lang=EN-US>features maps</span><span
+style='font-family:宋体'>分别合成：</span></p>
+
+<p class=MsoNormal><img width=351 height=99 src="人眼敏感区域.files/image008.jpg" align=left hspace=12></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+
+<p class=MsoNormal><img width=248 height=43 src="人眼敏感区域.files/image009.jpg" align=left hspace=12></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体'>最后三类合并：</span></p>
+
+<p class=MsoNormal><img width=246 height=43 src="人眼敏感区域.files/image010.jpg"
+align=left hspace=12></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+<p class=MsoNormal><span lang=EN-US><img width=302 height=720 id="图片 7"
+src="人眼敏感区域.files/image011.jpg"></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+
+</div>
+
+</body>
+
+</html>

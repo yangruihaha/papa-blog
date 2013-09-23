@@ -18,49 +18,68 @@
 		<link rel="stylesheet" type="text/css" href="./plugins/BlurMenu/css/style1.css">      
 		<link href="http://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet" type="text/css">
 		<link href='http://fonts.googleapis.com/css?family=Cantora+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="./css/index.css">
 	</head>
 	<body>
-			<div class="container text-center">
-				<h1 text-align="center"><img src="./figures/papa-team.png" alt="Papa Team"></h1>
+			<div id="header">
+				<div class="container text-center">
+					<h1 text-align="center"><img src="./figures/papa-team.png" alt="Papa Team"></h1>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+					<ul class="bmenu"> 
+						<li>
+							<a href="#technology">Technology</a>
+						</li>
+						<li>
+							<a href="#">Designing</a>
+						</li>
+						<li>
+							<a href="#">Slicing</a>
+						</li>
+						<li>
+							<a href="#">Photography</a>
+						</li>
+						<li>
+							<a href="#">Projects</a>
+						</li>
+						<li>
+							<a href="#">Slides</a>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+					</ul>
+					</div>
+					<div id="description" class="col-md-7 jumbotron text-right">
+						<h2>Welcome to Papa Team's Blog Site!</h2>
+						<img src="./figures/yellrush.png" class="profile img-circle" height="75px"> and
+						<img src="./figures/Erinnyes.png" class="profile img-circle" height="75px"> write the blog together<br>
+						Yellrush comes from Department of Computer Science and Technology, Nanjing University. <big>Technology</big>, <big>soccer</big> and <big>game</big> are his tags.<br>
+						The fine young man, Erinnyes, is from Department of Industrial Design, Shanghai Jiaotong University. He is expected to become an inter-disciplinary talent of <big>industry</big> and <big>art</big>.<br>
+						Visitor to this blog will get the <em>technical experience</em> and <em>design inspiration</em> we shared.<br>
+						PS: New team member is welcome at any time.
+					</div>
+				</div>
 			</div>
 			
-			<div class="row">
-				<div class="col-md-4">
-				<ul class="bmenu"> 
-					<li>
-						<a href="#">Technology</a>
-					</li>
-					<li>
-						<a href="#">Designing</a>
-					</li>
-					<li>
-						<a href="#">Slicing</a>
-					</li>
-					<li>
-						<a href="#">Photography</a>
-					</li>
-					<li>
-						<a href="#">Projects</a>
-					</li>
-					<li>
-						<a href="#">Slides</a>
-					</li>
-					<li>
-						<a href="#">Contact</a>
-					</li>
-				</ul>
+			<div class="container">
+			
+				<div class="page-header" id="technology">
+					<h1>Technology Articles</h1>
 				</div>
-				<div id="description" class="col-md-7 jumbotron text-right">
-					<h2>Welcome to Papa Team's Blog Site!</h2>
-					<img src="./figures/yellrush.png" class="profile img-circle" height="75px"> and
-					<img src="./figures/Erinnyes.png" class="profile img-circle" height="75px"> write the blog together<br>
-					Yellrush comes from Department of Computer Science and Technology, Nanjing University. <big>Technology</big>, <big>soccer</big> and <big>game</big> are his tags.<br>
-					The fine young man, Erinnyes, is from Department of Industrial Design, Shanghai Jiaotong University. He is expected to become an inter-disciplinary talent of <big>industry</big> and <big>art</big>.<br>
-					Visitor to this blog will get the <em>technical experience</em> and <em>design inspiration</em> we shared.<br>
-					PS: New team member is welcome at any time.
-				</div>
+				
+				<article class="jumbotron">
+					<h2>A short talk about human visual sensitivity region computation(In Chinese)</h2>
+					Author: Yellrush<br>
+					<a href="./articles/人眼敏感区域.html">
+					没错，这是本站的第一篇文章。某种意义上他还只是一种测试，毕竟抛弃框架从头开始维护一个静态结构的博客还是比较花费时间的。而现在最缺的就是时间了。<br>
+					实际上这只是这星期组会上的一个informal的口头讲稿，主要内容介绍了一个能够在静态图像中找出人眼敏感区域的模型和算法(该领域最经典的算法)...
+					</a>
+				</article>
+			
 			</div>
-
 	</body>
 </html>

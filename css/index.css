@@ -1,12 +1,19 @@
 body{
+	background-color: rgba(0, 0, 0, 0.9); 
+
+	color: #fff;
+	font-family: 'Josefin Slab', Arial, sans-serif;
+	font-size: 13px;
+}
+
+#header{
 	background: url("http://g.hiphotos.bdimg.com/album/s%3D1400%3Bq%3D90/sign=7c14e2130824ab18e416e53305caddbc/e850352ac65c10387d31c9f7b3119313b07e89b3.jpg");
 	background-repeat:no-repeat;
 	background-size: cover;
 	position:relative;
-	
-	color: #fff;
-	font-family: 'Josefin Slab', Arial, sans-serif;
-	font-size: 13px;
+	-webkit-box-shadow: 0px 0px 2px 3px rgba(255, 255, 255, 0.7), 0px 0px 30px 8px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0px 0px 2px 3px rgba(255, 255, 255, 0.7), 0px 0px 30px 8px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 0px 2px 3px rgba(255, 255, 255, 0.7), 0px 0px 30px 8px rgba(0, 0, 0, 0.25);
 }
 
 #description{
@@ -26,4 +33,14 @@ img.profile{
 	-webkit-box-shadow: 0px 0px 2px 3px rgba(255, 255, 255, 0.7), 0px 0px 30px 8px rgba(0, 0, 0, 0.25);
 	-moz-box-shadow: 0px 0px 2px 3px rgba(255, 255, 255, 0.7), 0px 0px 30px 8px rgba(0, 0, 0, 0.25);
 	box-shadow: 0px 0px 2px 3px rgba(255, 255, 255, 0.7), 0px 0px 30px 8px rgba(0, 0, 0, 0.25);
+}
+
+.page-header h1{
+	font-family: 'Happy Monkey', cursive;
+	color:green;
+}
+
+article.jumbotron{
+	background-color: rgba(17, 17, 17, 0.6); 
+	color:green;
 }
